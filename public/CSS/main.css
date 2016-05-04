@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 100;
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  text-align: center;
+  color: white;
+  height: 150px;
+  padding: 50px 0px;
+  font-family: sans-serif;
+  background-color: #c90d4b;
+}
+
+.columnA{
+  float:left;
+  font-weight: 100;
+  padding: 30px;
+  width: 50%;
+  font-size: 14px;
+  color: black;
+  background-color: #333333;
+}
+.columnB{
+  float:right;
+  font-weight: 100;
+  padding: 30px;
+  width: 50%;
+  font-size: 14px;
+  color: black;
+  background-color: #00FFB7;
+}
+.bmi{
+  float:left;
+  font-weight: 100px;
+  padding: 10px;
+  width:100%;
+  font-size: 14px;
+  background-color: #7d7d7d;
+}
+.DailyIntakeOfCalories{
+  /*float:left;*/
+  font-weight: 100px;
+  padding: 10px;
+  width:100%;
+  font-size: 14px;
+  background-color: #7d7d7d;
+}
+.DailyExercises{
+  /*float:left;*/
+  font-weight: 100px;
+  padding: 10px;
+  width:100%;
+  font-size: 14px;
+  background-color: #7d7d7d;
+}
+
+p{
+  color: white;
+  padding: 10px;
+}
+h1{
+  padding: 5px;
+}
+
+img{
+  width: 25%;
+  height: auto;
+}
+@media all and (max-width: 600px){
+  .columnA{
+    width: auto;
+  }
+  .columnB{
+    width: 100%;
+  }
+  .ProgressBar{
+    text-align: center;
+    float: right;
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: #b30059;
+  }
+h3{
+  padding: 10px;
+
+}
+}
+@media (min-width: 400px) and (max-width: 800px){
+  header{
+    color: white;
+    background-color: #330033;
+  }
+  h1{
+    padding: 5px;
+    text-align: center;
+  }
+
+}
