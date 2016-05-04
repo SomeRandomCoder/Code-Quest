@@ -102,3 +102,28 @@ h3{
   }
 
 }
+#achievementTable{
+  width: 100%;
+  height: inherit;
+  border: inherit;
+  border-width: 2px;
+  border-style: double;
+  float: left;
+
+
+}
+
+#bodyBackground{
+  background: linear-gradient(to right,white, lime);
+  /*background-color: #AFB5B5;*/
+}
+
+.table{
+  width: 100%;
+  height: inherit;
+  border-width: 2px;
+  border-color: black;
+  border-style: double;
+
+
+}
