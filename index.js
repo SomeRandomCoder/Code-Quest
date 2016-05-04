@@ -3,8 +3,8 @@ var handlebars = require('express-handlebars');
 var app = express();
 
 //requiring modules
-var bmi = require("Methods/bmi");
-var calories = require("Methods/caleries");
+var bmi = require("./Methods/bmi");
+// var calories = require("Methods/caleries");
 
 
 
@@ -26,7 +26,7 @@ app.get('/BMI', function (req, res) {
 
 
 
-var portNumber = process.env.CRUD_PORT_NR || 3542;
+var portNumber = process.env.CRUD_PORT_NR || 8080;
 app.listen(portNumber, function() {
   console.log('App listening on: ' + portNumber);
 });
