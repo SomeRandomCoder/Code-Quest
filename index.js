@@ -27,6 +27,12 @@ app.get('/', function (req, res) {
 app.get('/BMI', function (req, res) {
  res.render("BMI");
 });
+app.get('/calorie', function(req, res){
+  res.render("calorie");
+});
+app.get('/achievements', function(req, res){
+  res.render("achievements");
+});
 
 
 

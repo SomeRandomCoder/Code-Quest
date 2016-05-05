@@ -1,10 +1,65 @@
 <html>
 <head>
-
-
+<link href="/CSS/main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<p>B:AARRHHSGGGSHHH</p>
+    <div class="well well-lg">
+<div id="weight" class="col-md-6">
+  Weight(KG):
+  <input id="userWeight" >
+</div>
+<div id="height" class="col-md-6">
+  Height(m):
+  <input id="userHeight" >
+    </div>
+    </div>
+
+
+    <div class="panel panel-default">
+    <div class="panel-heading">
+    <h3 class="panel-title">Results</h3>
+   </div>
+   <div id="result"></div>
+   <button id="submit" onClick="bmi()" class="btn btn-lg btn-primary">Submit</button>
+
+
+    </div>
+
+
+
+
+  <script>
+  var bmi = function(){
+  var userWeight = document.getElementById("userWeight");
+  var userHeight = document.getElementById("userHeight");
+  var results = document.getElementById("result");
+  var weight = userWeight.value;
+  var height = userHeight.value;
+  if( height > 100){
+    height = height / 100;
+  }
+  var bmi = parseFloat(weight / (height * height));
+
+  var range = "";
+
+
+  if(bmi < 18.5){
+    range 
+    range = "Underweight";
+  }
+  else if(bmi >= 18.5 && bmi <= 24.9){
+  range = "Healthy";
+  }
+  else if(bmi >= 25.0 && bmi <= 29.9){
+    range = "Overweight";
+  }
+  else {
+    range = "Obese";
+  }
+  results.innerHTML = bmi.toFixed(1) + " - " + range;
+}
+
+  </script>
 </body>
 
 </html>

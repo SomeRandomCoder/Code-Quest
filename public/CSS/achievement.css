@@ -1,0 +1,6 @@
+.col-md-3 {
+  width: 19%;
+  height: 17em;
+  border: 1px solid black;
+  display: inline-block;
+}
