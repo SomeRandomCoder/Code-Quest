@@ -7,14 +7,14 @@ Health-Quest is an app that helps users to challenge themselves and other users 
 ##Health Focus
 
 * BMI - Body Mass Index-
-Takes the user's input of height and weight and tells them their status
+  * Takes the user's input of height and weight and tells them their status
 * Challenges - 
-Users get to challenge one another based on what they are goals are and what they want to achive
+  * Users get to challenge one another based on what they are goals are and what they want to achive
 * Achive-
-If the user wins a challenge they get a reward and get badges
+  * If the user wins a challenge they get a reward and get badges
 
 ##Run-it-locally
 
 [Health Quest](http://healthquest.projectcodex.co/)
 
-
+![](images/HQ.png)

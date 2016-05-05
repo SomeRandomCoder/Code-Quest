@@ -3,6 +3,33 @@
 <link href="/CSS/main.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+
+  <form role="form" class="row">
+  <div class="form-group col-lg-1">
+    <label for="code">Weight(KG)</label>
+    <input type="text" id="userWeight" class="form-control" >
+  </div>
+
+  <div class="form-group col-lg-1 ">
+    <label for="code">Height</label>
+    <input type="text" id="userHeight" class="form-control input-normal">
+  </div>
+
+
+
+
+      <div class="panel panel-default">
+      <div class="panel-heading">
+      <h3 class="panel-title">Results</h3>
+     </div>
+     <div id="result"></div>
+     <button id="submit" onClick="bmi()" class="btn btn-lg btn-primary">Submit</button>
+
+
+      </div>
+
+</form>
+
     <div class="well well-lg">
 <div id="weight" class="col-md-6">
   Weight(KG):
@@ -14,16 +41,6 @@
     </div>
     </div>
 
-
-    <div class="panel panel-default">
-    <div class="panel-heading">
-    <h3 class="panel-title">Results</h3>
-   </div>
-   <div id="result"></div>
-   <button id="submit" onClick="bmi()" class="btn btn-lg btn-primary">Submit</button>
-
-
-    </div>
 
 
 

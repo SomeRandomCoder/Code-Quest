@@ -101,23 +101,21 @@ img{
     background-color: #b30059;
   }
 h3{
-  padding: 10px;
-
+  padding: 10px
 }
+#wight{
+  width: auto;
+
 }
 */
 /*@media (min-width: 400px) and (max-width: 800px){
-  header{
-    color: white;
-    background-color: #330033;
-  }
-  h1{
-    padding: 5px;
-    text-align: center;
+  input{
+    width: 50%;
   }
 
-}
-*/
+
+}*/
+
 .red{
   color: red;
 }
