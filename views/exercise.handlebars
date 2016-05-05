@@ -1,40 +1,37 @@
-
 <div class='container'>
-  <h1>Activity</h1>
-  Time spent training:
+  <h1>Activity</h1> Time spent training:
   <input id="trainingTime">
 
   <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Activity Level
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a onClick="Active()">Active</a></li>
-    <li><a onClick="Very_active()">Very Active</a></li>
-    <li><a onClick="Dormant()">Dormant</a></li>
-    <li><a onClick="active()">Potato</a></li>
-  </ul>
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Activity Level
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+      <li><a onClick="Active()">Active</a></li>
+      <li><a onClick="Very_active()">Very Active</a></li>
+      <li><a onClick="Dormant()">Dormant</a></li>
+      <li><a onClick="active()">Potato</a></li>
+    </ul>
+  </div>
 </div>
-
 <script>
-var Activity = "";
+  var Activity = "";
 
-var active = function(){
-console.log(Activity);
-Activity = "Active";
-}
-var Very_active = function(){
-  console.log(Activity);
-Activity = "Very active";
-}
-var Dormant = function(){
-  console.log(Activity);
-Activity = "Dormant";
-}
-var Potato = function(){
-  console.log(Activity);
-Activity = "Potato";
-}
-
+  var active = function() {
+    console.log(Activity);
+    Activity = "Active";
+  }
+  var Very_active = function() {
+    console.log(Activity);
+    Activity = "Very active";
+  }
+  var Dormant = function() {
+    console.log(Activity);
+    Activity = "Dormant";
+  }
+  var Potato = function() {
+    console.log(Activity);
+    Activity = "Potato";
+  }
 </script>
