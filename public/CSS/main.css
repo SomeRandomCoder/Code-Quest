@@ -101,21 +101,19 @@ img{
     background-color: #b30059;
   }
 h3{
-  padding: 10px;
-
+  padding: 10px
 }
+#wight{
+  width: auto;
+
 }
 */
 /*@media (min-width: 400px) and (max-width: 800px){
-  header{
-    color: white;
-    background-color: #330033;
-  }
-  h1{
-    padding: 5px;
-    text-align: center;
+  input{
+    width: 50%;
   }
 
+<<<<<<< HEAD
 }
 <<<<<<< HEAD
 #achievementTable{
@@ -141,10 +139,9 @@ h3{
   border-color: black;
   border-style: double;
 
+}
 
-=======
-*/
+
 .red{
   color: red;
->>>>>>> 2e995d5d1e7377e35293dd9af765a4695082ed8c
 }
