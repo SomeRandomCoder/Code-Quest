@@ -1,202 +1,166 @@
 <html>
+
 <head>
-<link href="/CSS/main.css" type="text/css" rel="stylesheet">
+  <link href="/CSS/main.css" type="text/css" rel="stylesheet">
 </head>
+
 <body>
 
 
   <form role="form" class="row">
-  <div class="form-group col-lg-1">
-    <label for="code">Weight(KG)</label>
-    <input type="text" id="userWeight" class="form-control" >
-  </div>
+    <div class="form-group col-lg-1">
+      <label for="code">Weight(KG)</label>
+      <input type="text" id="userWeight" class="form-control">
+    </div>
 
-  <div class="form-group col-lg-1 ">
-    <label for="code">Height</label>
-    <input type="text" id="userHeight" class="form-control input-normal">
-  </div>
+    <div class="form-group col-lg-1 ">
+      <label for="code">Height</label>
+      <input type="text" id="userHeight" class="form-control input-normal">
+    </div>
 
+  </form>
 
-
-
-      <div class="panel panel-default">
-      <div class="panel-heading">
+  <div class="panel panel-default">
+    <div class="panel-heading">
       <h3 class="panel-title">Results</h3>
-     </div>
-     <div id="result"></div>
-     <button id="submit" onClick="bmi()" class="btn btn-lg btn-primary">Submit</button>
+    </div>
+    <div id="result"></div>
+    <button id="submit" onClick="bmi()" class="btn btn-lg btn-primary">Submit</button>
 
+
+  </div>
+
+  <div id="BMI-Chart">
+    <img src="/images/bmi-chart.gif">
+  </div>
+  <h3> A bit of information of each category in the BMI chart</h3>
+
+  <div class="Underweight panel">
+
+    <button id="Underweight_toggle" data-toggle="collapse" data-target="#demo">Underweight</button>
+
+    <div id="demo" class="collapse">
+
+      <div class="panel-heading">
+        <h3 class="panel-title">Underweight</h3>
+      </div>
+      <div class="panel-body">
+        <b>Causes</b>
+        <ul>
+          <li>Thinness causes range from too much physical activity, malnutrition and illnesses to anorexia.</li>
+          <li>In still other cases, a combination of malnutrition and physical activity can lead to this condition.</li>
+          <li>Eating disorders like anorexia and bulimia may also cause thinness.</li>
+          <li>Illness such as cancer and tuberculosis are also factors.</li>
+          <li>Other disorders such as dyspepsia, liver disorders, presence of parasites and bacteria in the alimentary canal can also be causes.</li>
+          <li>In some case, genetic factors also play an important role.</li>
+        </ul>
+
+        <b>Symptoms</b>
+        <ul>
+          <li>There are certain underweight health risks that could affect a person and these include a failing immune system, osteoporosis and hair loss.</li>
+          <li>Due to a weak immune system these individuals are sick very often. </li>
+          <li>They have weak bones or osteoporosis.</li>
+          <li>Underweight women may suffer from infertility. </li>
+          <li>Extremely thin persons are also anemic, that is, they have a very low red blood cell count.</li>
+          <li>Hair loss is also noticed. Other effects of being underweight are muscle weakness, low blood pressure and the most harmful effect is heart failure.</li>
+        </ul>
+        <b>Treatment:</b>
+        <ul>
+          <li> Thinness treatment mainly consists of diet and exercise. </li>
+          The main treatment is bringing the patient as close as possible to his normal body weight; restore nutrients in the patients body and finally maintaining the normal BMI that the person has managed to attain. </li>
+          <li> His diet should be high in calories. </li>
+          <li> A high protein diet will help in rebuilding muscle mass and tissues. </li>
+        </ul>
 
       </div>
-
-</form>
-
-    <!-- <div class="well well-lg">
->>>>>>> origin/lolito
-<div id="weight" class="col-md-6">
-  Weight(KG):
-  <input id="userWeight" >
-</div>
-<div id="height" class="col-md-6">
-  Height(m):
-  <input id="userHeight" >
     </div>
-    </div> -->
-
-
-    <div class="panel panel-default">
-    <div class="panel-heading">
-    <h3 class="panel-title">Results</h3>
-   </div>
-   <div id="result"></div>
-   <button id="submit" onClick="bmi()" class="btn btn-lg btn-primary">Submit</button>
-
-
-    </div>
-
-<div id="BMI-Chart">
-  <img src = "/images/bmi-chart.gif">
-</div>
-<h3> A bit of information of each category in the BMI chart</h3>
-
-<div class="Underweight panel">
-
-  <button id="Underweight_toggle" data-toggle="collapse" data-target="#demo">Underweight</button>
-
-<div id="demo" class="collapse">
-
-  <div class="panel-heading">
-    <h3 class="panel-title">Underweight</h3>
   </div>
-  <div class="panel-body">
-    <b>Causes</b>
-  <ul>
-    <li>Thinness causes range from too much physical activity, malnutrition and illnesses to anorexia.</li>
-    <li>In still other cases, a combination of malnutrition and physical activity can lead to this condition.</li>
-    <li>Eating disorders like anorexia and bulimia may also cause thinness.</li>
-    <li>Illness such as cancer and tuberculosis are also factors.</li>
-    <li>Other disorders such as dyspepsia, liver disorders, presence of parasites and bacteria in the alimentary canal can also be causes.</li>
-    <li>In some case, genetic factors also play an important role.</li>
-</ul>
 
-  <b>Symptoms</b>
-  <ul>
-     <li>There are certain underweight health risks that could affect a person and these include a failing immune system, osteoporosis and hair loss.</li>
-     <li>Due to a weak immune system these individuals are sick very often. </li>
-     <li>They have weak bones or osteoporosis.</li>
-     <li>Underweight women may suffer from infertility. </li>
-     <li>Extremely thin persons are also anemic, that is, they have a very low red blood cell count.</li>
-    <li>Hair loss is also noticed. Other effects of being underweight are muscle weakness, low blood pressure and the most harmful effect is heart failure.</li>
-  </ul>
-<b>Treatment:</b>
-  <ul>
-  <li>  Thinness treatment mainly consists of diet and exercise. </li>
-    The main treatment is bringing the patient as close as possible to his normal
-    body weight; restore nutrients in the patients body and finally maintaining
-    the normal BMI that the person has managed to attain. </li>
-  <li>  His diet should be high in calories. </li>
-  <li> A high protein diet will help in rebuilding muscle mass and tissues. </li>
-</ul>
-
-</div>
-  </div>
-</div>
-
-<div class="Healthy panel">
-<button id="Healthy_toggle" data-toggle="collapse" data-target="#demo1">Healthy</button>
-<div id="demo1" class="collapse">
-  <div class="panel-heading1">
-    <h3 class="panel-title1">Healthy</h3>
-  </div>
-  <div class="panel-body">
-      <b>While maintaining good health habits cannot guarantee a longer life, it can certainly
+  <div class="Healthy panel">
+    <button id="Healthy_toggle" data-toggle="collapse" data-target="#demo1">Healthy</button>
+    <div id="demo1" class="collapse">
+      <div class="panel-heading1">
+        <h3 class="panel-title1">Healthy</h3>
+      </div>
+      <div class="panel-body">
+        <b>While maintaining good health habits cannot guarantee a longer life, it can certainly
         improve the quality of your life. A few simple things, if practiced regularly,
         can help reduce your risk of illness and enrich your life such as:</b>
-    <ul>
-        <li>Get regular exercise and control your weight.</li>
-        <li>Don't smoke or abuse drugs.</li>
-        <li>Eat a balanced and healthy diet.</li>
-        <li>Manage your stress levels by means of relaxation methods.</li>
-    </ul>
-</div>
+        <ul>
+          <li>Get regular exercise and control your weight.</li>
+          <li>Don't smoke or abuse drugs.</li>
+          <li>Eat a balanced and healthy diet.</li>
+          <li>Manage your stress levels by means of relaxation methods.</li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
 
 
-<div class="overweight">
-<button id="Overweight_toggle" data-toggle="collapse" data-target="#demo3">Overweight</button>
-<div id="demo3" class="collapse">
-  <div class="panel-heading">
-    <h3 class="panel-title1">Overweight</h3>
-  </div>
-  <div class="panel-body">
-      <b>Symptoms:</b>
-    <ul>
-        <li>Fatigue.</li>
-        <li>Shortness of breath.</li>
-        <li>Irregular heart beats.</li>
-        <li>respiratory obstruction</li>
-    </ul>
+  <div class="overweight">
+    <button id="Overweight_toggle" data-toggle="collapse" data-target="#demo3">Overweight</button>
+    <div id="demo3" class="collapse">
+      <div class="panel-heading">
+        <h3 class="panel-title1">Overweight</h3>
+      </div>
+      <div class="panel-body">
+        <b>Symptoms:</b>
+        <ul>
+          <li>Fatigue.</li>
+          <li>Shortness of breath.</li>
+          <li>Irregular heart beats.</li>
+          <li>respiratory obstruction</li>
+        </ul>
 
-    <b>Treatment:</b>
-    <ul>
-      <li>Treat patients who have medical causes or complications</li>
-      <li><b>Fun Fact:</b>It turns out that just a 10% body fat reduction can produce increases in insulin sensitivity and blood pressure reduction.</li>
-    </ul>
-</div>
+        <b>Treatment:</b>
+        <ul>
+          <li>Treat patients who have medical causes or complications</li>
+          <li><b>Fun Fact:</b>It turns out that just a 10% body fat reduction can produce increases in insulin sensitivity and blood pressure reduction.</li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
 
   <script>
-  var bmi = function(){
-  var userWeight = document.getElementById("userWeight");
-  var userHeight = document.getElementById("userHeight");
-  var results = document.getElementById("result");
-  var weight = userWeight.value;
-  var height = userHeight.value;
-  if( height > 100){
-    height = height / 100;
-  }
-  var bmi = parseFloat(weight / (height * height));
+    var bmi = function() {
+      var userWeight = document.getElementById("userWeight");
+      var userHeight = document.getElementById("userHeight");
+      var results = document.getElementById("result");
+      var weight = userWeight.value;
+      var height = userHeight.value;
+      if (height > 100) {
+        height = height / 100;
+      }
+      var bmi = parseFloat(weight / (height * height));
 
-  var range = "";
-
-
-  if(bmi < 16){
-    range = "Severe Thinness";
-  }
-  else if(bmi >= 16 && bmi <= 17){
-  range = "Moderate Thinness";
-  }
-  else if(bmi >= 17 && bmi <= 18.5){
-    range = "Underweight";
-  }
-  else if(bmi >= 18.5 && bmi <= 25){
-    range = "Healthy";
-  }
-  else if(bmi >= 25 && bmi <= 30){
-    range = "Overweight";
-  }
-  else if(bmi >= 30 && bmi <= 35){
-    range = "Obese Class 1";
-  }
-  else if(bmi >= 35 && bmi <= 40){
-    range = "Obese Class 2";
-  }
-  else if(bmi > 40){
-    range = "Obese Class 3";
-  }
-
-  results.innerHTML = bmi.toFixed(1) + " - " + range;
-
-  if(results.innerHTML <= 18.5){
-    Underweight_toggle.collapsing;
-  }
-
-}
+      var range = "";
 
 
+      if (bmi < 16) {
+        range = "Severe Thinness";
+      } else if (bmi >= 16 && bmi <= 17) {
+        range = "Moderate Thinness";
+      } else if (bmi >= 17 && bmi <= 18.5) {
+        range = "Underweight";
+      } else if (bmi >= 18.5 && bmi <= 25) {
+        range = "Healthy";
+      } else if (bmi >= 25 && bmi <= 30) {
+        range = "Overweight";
+      } else if (bmi >= 30 && bmi <= 35) {
+        range = "Obese Class 1";
+      } else if (bmi >= 35 && bmi <= 40) {
+        range = "Obese Class 2";
+      } else if (bmi > 40) {
+        range = "Obese Class 3";
+      }
 
+      results.innerHTML = bmi.toFixed(1) + " - " + range;
+
+      if (results.innerHTML <= 18.5) {
+        Underweight_toggle.collapsing;
+      }
+
+    }
   </script>
 </body>
 

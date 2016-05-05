@@ -66,6 +66,10 @@ p{
 h1{
   padding: 5px;
 }
+h3{
+  text-align: center;
+  color: orange;
+}
 
 img{
   width: 10%;
@@ -86,6 +90,10 @@ img{
 }
 #currentChallenge {
   font-size: 45px;
+}
+#currentChallenge{
+  text-align: center;
+  color: green;
 }
 /*media queries*/
 @media all and (max-width: 600px){
@@ -111,19 +119,6 @@ h3{
 
 }
 */
-/*@media (min-width: 400px) and (max-width: 800px){
-  input{
-    width: 50%;
-  }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-=======
->>>>>>> origin/lolito
-<<<<<<< HEAD
-
-}*/
 
 #achievementTable{
   width: 100%;
