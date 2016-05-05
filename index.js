@@ -18,19 +18,20 @@ app.set('view engine', 'handlebars');
 
 //routes
 
-// app.get('/', function (req, res) {
-//  res.send("hello coco");
-// });
-
 app.get('/', function (req, res) {
- res.render("userProfile");
+ res.render('index');
+});
+
+app.get('/userProfile', function (req, res) {
+ res.render("userProfile" , {
+   layout : false
+   });
 });
 app.get('/BMI', function (req, res) {
  res.render("BMI");
 });
 
 app.get('/exercise', function(req, res) {
-
   res.render('exercise');
 });
 app.get('/calorie', function(req, res){

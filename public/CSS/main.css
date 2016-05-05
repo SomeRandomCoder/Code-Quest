@@ -84,6 +84,9 @@ img{
 .well-lg {
   height: 75px;
 }
+#currentChallenge {
+  font-size: 45px;
+}
 /*media queries*/
 @media all and (max-width: 600px){
   .columnA{
