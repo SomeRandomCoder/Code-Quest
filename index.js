@@ -27,9 +27,9 @@ app.get('/', function (req, res) {
 app.get('/BMI', function (req, res) {
  res.render("BMI");
 });
-// app.get('/achievements', req, res){
-//   res.render('')
-// }
+app.get('/exercise', function(req, res) {
+  res.render('exercise');
+});
 
 
 
