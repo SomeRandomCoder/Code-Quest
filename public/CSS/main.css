@@ -71,6 +71,20 @@ img{
   width: 25%;
   height: auto;
 }
+#result {
+  border 1px solid black;
+  font-size: 35px;
+}
+#userWeight {
+  width: 75%;
+}
+#userHeight {
+  width: 75%;
+}
+.well-lg {
+  height: 75px;
+}
+/*media queries*/
 @media all and (max-width: 600px){
   .columnA{
     width: auto;
@@ -91,7 +105,8 @@ h3{
 
 }
 }
-@media (min-width: 400px) and (max-width: 800px){
+*/
+/*@media (min-width: 400px) and (max-width: 800px){
   header{
     color: white;
     background-color: #330033;
@@ -101,4 +116,8 @@ h3{
     text-align: center;
   }
 
+}
+*/
+.red{
+  color: red;
 }
