@@ -5,36 +5,47 @@
 </head>
 <body>
   Type in your meal here:
-<input id="userInput">
-<button id="submit" onClick="searchQuery()">Search</button>
-<div id="container">
-<div id="result"> </div>
-
-
-
+  <input type='text' id ='userInput'/>
+  <button onclick='func()'>press</button><div id="container">
+  <div id="result"> </div>
 </div>
+
+<div>
+    <p id ='stuff1'></p>
+    <p id ='stuff2'></p>
+    <p id ='stuff3'></p>
+    <p id ='stuff4'></p>
+</div>
+
 <script>
-var searchBar = document.getElementById("userInput");
-var userInput = searchBar.value;
-var result = document.getElementById("result");
-
-var foodMap = [{item: "Tofu Burger", Weight: 70,calories: 110,points: 10},{item: "Big Mac - Large", Weight: 212,calories: 540, points: -20},{item: "Fruit Salad", Weight: 215,calories: 170, points: 15},{item: "Macaroni & Cheese", Weight: 99,calories: 330, points: -25},{item: "Vegetable Wrap", Weight: 85,calories: 130, points: 10},{item: "Kingsteers", Weight: 70,calories: 654, points: -35},{item: "Chicken Salad", Weight: 161,calories: 370, points: 5},{item: "KFC - Streetwise 2", Weight: 70,calories: 861,points: -35}];
-
-// var searchQuery = function(){
-// console.log("test");
-// for(x=0;x<foodMap.length;x++){
-//   if(userInput.includes('*')){
-//     console.log(foodMap[x].item);
-//
+ var button = document.getElementById('userInput');
+  //console.log(button.value);
+  var func = function(){
 
 
-
-result.innerHTML = "Atleast this works";
-                          }
-  //add more
-                            }
-
-}
+  var foodMap = [{item: "Tofu Burger", Weight: 70,calories: 110,points: 10},
+            {item: "Big Mac - Large", Weight: 212,calories: 540, points: -20},
+            {item: "Fruit Salad", Weight: 215,calories: 170, points: 15},
+            {item: "Macaroni & Cheese", Weight: 99,calories: 330,
+points: -25},
+            {item: "Vegetable Wrap", Weight: 85,calories: 130, points: 10},
+            {item: "Kingsteers", Weight: 70,calories: 654, points: -35},
+            {item: "Chicken Salad", Weight: 161,calories: 370, points: 5},
+            {item: "KFC - Streetwise 2", Weight: 70,calories:
+861,points: -35}];
+  for (var food in foodMap){
+    dish = foodMap[food].item;
+    if(dish === button.value){
+      console.log(foodMap[food]);
+      result.innerHTML = foodMap[food].item + ",calories: " + foodMap[food].calories;
+      $('#stuff1').append('the food you ate :' +
+JSON.stringify(foodMap[food].item));
+      $('#stuff2').append(JSON.stringify(foodMap[food].Weight));
+      $('#stuff3').append(JSON.stringify(foodMap[food].calories));
+      $('#stuff4').append(JSON.stringify(foodMap[food].points));
+    }
+  }
+  }
 </script>
 </body>
 
