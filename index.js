@@ -5,7 +5,8 @@ var app = express();
 //requiring modules
 
 var bmi = require('./Methods/bmi');
-//var achievements = require('Methods/achievements');
+
+// var achievements = require('./Methods/achievements');
 // var challenges = require('Methods/challenges');
 // var exercise = require('Methods/exercise');
 // var user = require('Methods/user');
@@ -29,6 +30,7 @@ app.get('/userProfile', function (req, res) {
 app.get('/BMI', function (req, res) {
  res.render("BMI");
 });
+
 app.get('/exercise', function(req, res) {
   res.render('exercise');
 });
