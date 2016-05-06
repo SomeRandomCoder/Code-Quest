@@ -10,7 +10,12 @@
   display: none;
   visibility: hidden;
 }
-
+img {
+  background-color: white;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
 header{
   width: 100%;
   text-align: center;

@@ -73,7 +73,7 @@
         dish = foodMap[food].item;
         if (dish === button.value) {
           console.log(foodMap[food]);
-          result.innerHTML = foodMap[food].item + ",calories: " + foodMap[food].calories;
+          result.innerHTML = foodMap[food].item + ",calories: " + foodMap[food].calories + ",Points: " + foodMap[food].points;
           $('#stuff1').append('the food you ate :' + JSON.stringify(foodMap[food].item));
           $('#stuff2').append(JSON.stringify(foodMap[food].Weight));
           $('#stuff3').append(JSON.stringify(foodMap[food].calories));

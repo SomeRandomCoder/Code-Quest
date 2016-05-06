@@ -127,10 +127,7 @@
         height = height / 100;
       }
       var bmi = parseFloat(weight / (height * height));
-
       var range = "";
-
-
       if (bmi < 16) {
         range = "Severe Thinness";
       } else if (bmi >= 16 && bmi <= 17) {
@@ -148,13 +145,10 @@
       } else if (bmi > 40) {
         range = "Obese Class 3";
       }
-
       results.innerHTML = bmi.toFixed(1) + " - " + range;
-
       if (results.innerHTML <= 18.5) {
         Underweight_toggle.collapsing;
       }
-
     }
   </script>
 </body>

@@ -1,16 +1,18 @@
+
 <div class="container">
   <div class='row center'>
     <button onclick='toggleChallenge()' id='challengeButton' class='btn btn-large green darken-1'>Add Challenge</button>
     <button onclick='toggleFriend()' id='friendButton' class='btn btn-large green darken-1'>Challenge Friend</button>
     <div id='challenge'>
       <label>Create a Challenge</label>
-      <select class="browser-default">
+      <select id="goal" class="browser-default">
         <option value="" disabled selected>Choose a Goal</option>
         <option value="Exercise">Jogging</option>
         <option value="Sleep">Sleep</option>
         <option value="Healthy Eating">Healthy Eating</option>
       </select>
-      <input type='time' placeholder="Time"/>
+      <input id="time" type='time' placeholder="Time"/>
+      <button id="submit" onClick="submit()" class="btn btn-lg btn-primary">Submit</button>
     </div>
     <div id="friend">
       <label>Challenge a Friend</label>
@@ -29,7 +31,7 @@
     </div>
   </div>
   <h5>Current Goals</h5>
-  <div class="collection">
+  <div id="currentGoals" class="collection">
     <a href="#!" class="collection-item">Sleep: 08:00</a>
     <a href="#!" class="collection-item">Jogging<span class="new badge">1</span></a>
   </div>
@@ -51,4 +53,14 @@
     friend.style.visibility = 'visible';
     friend.style.display = 'block'
   }
+  var submit = function(){
+    var current = document.getElementById("currentGoals");
+    var goal = document.getElementById("goal");
+    var time = document.getElementById("time");
+
+    current.innerHTML = '<a href="#" class="collection-item">' + goal.innerHTML + '</a>'
+  }
 </script>
+</body>
+
+</html>
