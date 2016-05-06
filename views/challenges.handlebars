@@ -5,7 +5,7 @@
 </head>
 
 <body>
-<!-- <div class="container" text-align = "left"> -->
+<!-- {{currentChallenge}} -->
   <div class="overweight">
     <button id="Overweight_toggle" data-toggle="collapse" data-target="#demo3">Goal Challenge</button>
     <div id="demo3" class="collapse">
@@ -13,7 +13,9 @@
         <h3 class="panel-title1">Please Choose a Goal from below:</h3>
       </div>
 
-    <div class='container' text-align='center'>
+
+    <!-- <div class='container' text-align='center'> -->
+
       <div class="panel-body">
 
         <input id="Rjogging" type="radio" name="name" value="Jogging" checked > Jogging
@@ -27,12 +29,13 @@
               <label for="code">Time (in minutes)</label>
               <input type="text" id="Tjogging" class="form-control">
             </div>
+
           </div>
         </div>
       </div>
 
       <div class="panel-body">
-        <input type="radio" name="name" value="Meditation" checked> Meditation
+        <input id="Rmeditate" type="radio" name="name" value="Meditation" checked> Meditation
         <br>
         <div class="overweight">
           <button id="Overweight_toggle" data-toggle="collapse" data-target="#demo1">Input Time Amount</button>
@@ -40,22 +43,22 @@
             <p>Input your time length here:</p>
             <div class="form-group col-lg-1">
               <label for="code">Time (in minutes)</label>
-              <input type="text" id="userWeight" class="form-control">
+              <input type="text" id="Tmeditate" class="form-control">
             </div>
           </div>
         </div>
       </div>
 
       <div class="panel-body">
-        <input type="radio" name="name" value="Enough Sleep" checked> Enough Sleep
+        <input id="Rsleep" type="radio" name="name" value="Enough Sleep" checked> Enough Sleep
         <br>
         <div class="overweight">
           <button id="Overweight_toggle" data-toggle="collapse" data-target="#demo2">Input Time Amount</button>
           <div id="demo2" class="collapse">
             <p>Input your time length here:</p>
             <div class="form-group col-lg-1">
-              <label for="code">Time (in minutes)</label>
-              <input type="text" id="userWeight" class="form-control">
+              <label for="code">Time (in hours)</label>
+              <input type="text" id="Tsleep" class="form-control">
             </div>
           </div>
         </div>
@@ -75,10 +78,17 @@
           </div>
         </div>
       </div>
+      <div class="panel panel-default">
+        <div id="result"></div>
+        <button id="submit" onClick="submit()" class="btn btn-lg btn-primary">Submit</button>
+
+
+      </div>
     </div>
+
+
   </div>
-  </div>
-</div>
+
 
   <div class="overweight">
     <button id="Overweight_toggle" data-toggle="collapse" data-target="#demo5">Challenge a friend</button>
@@ -102,7 +112,9 @@
       <input type="text" id="userWeight" class="form-control">
     </div>
   </form>
-</div>
+
+<!-- </div> -->
+
 
   <h2><b>Recent Achievements:</b></h2>
   <table>
@@ -121,13 +133,25 @@
 var current = document.getElementById("currentChallenge");
 var jogging = document.getElementById('Rjogging');
 var jogTime = document.getElementById("Tjogging");
+var meditation = document.getElementById('Rmeditate');
+var medTime = document.getElementById("Tmeditate");
+var sleep = document.getElementById('Rsleep');
+var sleepTime = document.getElementById("Tsleep");
+var defaultText = "Current Challenge: ";
+var submit = function(){
 
 if(jogging.checked){
-  console.log("MEERRGGH");
+  current.innerHTML = defaultText + "Jog for " + jogTime.value + " minutes!";
+}
+else if(meditation.checked){
+    current.innerHTML = defaultText + "Meditate for " + medTime.value + " minutes!";
+}
+else if(sleep.checked){
+    current.innerHTML = defaultText + "Sleep for " + sleepTime.value + " hours!";
 }
 
-
-current.innerHTML="N/A";
+// current.innerHTML="N/A";
+}
 
 
 </script>
