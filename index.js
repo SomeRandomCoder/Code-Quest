@@ -1,10 +1,9 @@
 var express = require('express');
 var handlebars = require('express-handlebars');
 var app = express();
-
 //requiring modules
 
-var bmi = require('./Methods/bmi');
+// var bmi = require('./Methods/bmi');
 
 // var achievements = require('./Methods/achievements');
 // var challenges = require('Methods/challenges');
