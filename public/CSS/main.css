@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+#challenge, #friend{
+  display: none;
+  visibility: hidden;
+}
+
 header{
   width: 100%;
   text-align: center;
@@ -68,13 +73,9 @@ h1{
 }
 h3{
   text-align: center;
-  color: orange;
+  color: black;
 }
 
-img{
-  width: 10%;
-  height: auto;
-}
 #result {
   border 1px solid black;
   font-size: 35px;
@@ -90,8 +91,6 @@ img{
 }
 #currentChallenge {
   font-size: 45px;
-}
-#currentChallenge{
   text-align: center;
   color: green;
 }
