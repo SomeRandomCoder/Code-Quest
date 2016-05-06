@@ -1,4 +1,4 @@
-<html>
+
 
 <head>
   <link href="/CSS/main.css" type="text/css" rel="stylesheet">
@@ -6,42 +6,36 @@
 
 <body>
 
+<div class='container'>
+    <div class='center container'>
+      <h3>What is your BMI?</h3>
+      <div class="form-group">
+        <label for="code">Weight(KG)</label>
+        <input type="number" id="userWeight" class="form-control">
+      </div>
 
-  <form role="form" class="row">
-
-    <div class="form-group col-lg-1">
-      <label for="code">Weight(KG)</label>
-      <input type="text" id="userWeight" class="form-control">
+      <div class="form-group">
+        <label for="code">Height</label>
+        <input type="number" id="userHeight" class="form-control">
+      </div>
+      <button id="submit" onClick="bmi()" class="btn btn-lg btn-primary">Submit</button>
+      <br/>
     </div>
-
-    <div class="form-group col-lg-1 ">
-      <label for="code">Height</label>
-      <input type="text" id="userHeight" class="form-control input-normal">
-    </div>
-
-  </form>
-
+    <br/>
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">Results</h3>
     </div>
     <div id="result"></div>
-    <button id="submit" onClick="bmi()" class="btn btn-lg btn-primary">Submit</button>
-
-
   </div>
-
-  <div id="BMI-Chart">
-    <img src="/images/bmi-chart.gif">
+  <div class='container center'>
+    <img class='responsive-img' src="/images/bmi-chart.gif">
   </div>
-  <h3> A bit of information of each category in the BMI chart</h3>
+  <h4>BMI Chart Category Info</h4>
 
-  <div class="Underweight panel">
-
-    <button id="Underweight_toggle" data-toggle="collapse" data-target="#demo">Underweight</button>
-
+  <div class="Underweight center panel">
+    <button class='btn green darken-1' id="Underweight_toggle" data-toggle="collapse" data-target="#demo">Underweight</button>
     <div id="demo" class="collapse">
-
       <div class="panel-heading">
         <h3 class="panel-title">Underweight</h3>
       </div>
@@ -77,8 +71,8 @@
     </div>
   </div>
 
-  <div class="Healthy panel">
-    <button id="Healthy_toggle" data-toggle="collapse" data-target="#demo1">Healthy</button>
+  <div class="Healthy center panel">
+    <button class='btn green darken-1' id="Healthy_toggle" data-toggle="collapse" data-target="#demo1">Healthy</button>
     <div id="demo1" class="collapse">
       <div class="panel-heading1">
         <h3 class="panel-title1">Healthy</h3>
@@ -98,8 +92,8 @@
   </div>
 
 
-  <div class="overweight">
-    <button id="Overweight_toggle" data-toggle="collapse" data-target="#demo3">Overweight</button>
+  <div class="overweight center panel">
+    <button class='btn green darken-1' id="Overweight_toggle" data-toggle="collapse" data-target="#demo3">Overweight</button>
     <div id="demo3" class="collapse">
       <div class="panel-heading">
         <h3 class="panel-title1">Overweight</h3>
@@ -121,7 +115,7 @@
       </div>
     </div>
   </div>
-
+</div>
   <script>
     var bmi = function() {
       var userWeight = document.getElementById("userWeight");
@@ -158,5 +152,3 @@
     }
   </script>
 </body>
-
-</html>
