@@ -1,80 +1,85 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link href="/CSS/bootstrap.min.css" type="text/css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href="/CSS/main.css" type="text/css" rel="stylesheet">
-<title> healthQuest </title>
-<link rel="icon" href="https://github.com/SomeRandomCoder/Health-Quest/raw/lolito/images/HQ.png" type="image/x-icon">
+  <title> healthQuest </title>
+  <link rel="icon" href="https://github.com/SomeRandomCoder/Health-Quest/raw/lolito/images/HQ.png" type="image/x-icon">
 </head>
 
 <body>
 
-  <div class="container-fluid">
-      <nav class="navbar navbar-inverse">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-4">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <img src="https://github.com/SomeRandomCoder/Health-Quest/raw/lolito/images/HQ.png" height="20px" width="20px">
-            <a class="navbar-brand" href="#"><span style="color: lightgreen">Health</span> Quest</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-4">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img src="https://github.com/SomeRandomCoder/Health-Quest/raw/lolito/images/HQ.png" height="20px" width="20px">
+        <a class="navbar-brand" href="#"><span style="color: lightgreen">Health</span> Quest</a>
 
-          </div>
+      </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navbar-collapse-4">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Achievements</a></li>
-              <li><a href="#">Challenges</a></li>
-              <li>
-                <a class="btn btn-default " href="/userProfile" aria-expanded="false" aria-controls="nav-collapse4">Profile </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-  </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-4">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="btn btn-default " href="/userProfile" aria-expanded="false" aria-controls="nav-collapse4">Profile </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <div class="btn-group btn-group-justified" role="group" aria-label="...">
-    <div class="btn-group" role="group" method='get'>
-      <a href="/challenges"><button type="button" class="btn btn-default">Challenges</button></a>
+    <div class="btn-group" role="group">
+      <a href="/challenges">
+        <button type="button" class="btn btn-default">Goals</button>
+      </a>
     </div>
-  <div class="btn-group" role="group">
-    <a href="/BMI"><button type="button" class="btn btn-default">BMI</button></a>
+    <div class="btn-group" role="group">
+      <a href="/BMI">
+        <button type="button" class="btn btn-default">BMI</button>
+      </a>
+    </div>
+    <div class="btn-group" role="group">
+      <a href="/calorie" <button type="button" class="btn btn-default">Calories</button></a>
+    </div>
+    <div class="btn-group" role="group" method='get'>
+      <a href="/exercise">
+        <button type="button" class="btn btn-default">Activity</button>
+      </a>
+    </div>
   </div>
-  <div class="btn-group" role="group">
-    <a href="/calorie"<button type="button" class="btn btn-default">Calories</button></a>
-  </div>
-  <div class="btn-group" role="group" method='get'>
-    <a href="/exercise"><button type="button" class="btn btn-default">Exercise</button></a>
-  </div>
-</div>
 
-<footer>
+
   <div class="well">
-<div id="currentChallenge">Current Challenge: Jog for 20 minutes.</div>
+    <div id="currentChallenge">Current Challenge: Jog for 20 minutes.</div>
 
   </div>
-  Progression:
+  <h3>Challenge Progression:</h3>
   <div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-    60%
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+      60%
+    </div>
+
   </div>
-</div>
-
-</footer>
 
 
-<script href="js/bootstrap.min.js"></script>
+
+
+  <script href="js/bootstrap.min.js"></script>
 
 
   {{{body}}}
 
 </body>
+
 </html>

@@ -6,12 +6,18 @@
 
 <body>
 
+<!-- <div class="container" text-align = "left"> -->
+
   <div class="overweight">
     <button id="Overweight_toggle" data-toggle="collapse" data-target="#demo3">Goal Challenge</button>
     <div id="demo3" class="collapse">
       <div class="panel-heading">
         <h3 class="panel-title1">Please Choose a Goal from below:</h3>
       </div>
+
+
+    <!-- <div class='container' text-align='center'> -->
+
       <div class="panel-body">
 
         <input type="radio" name="name" value="Jogging" checked> Jogging
@@ -24,7 +30,7 @@
             <div class="form-group col-lg-1">
               <label for="code">Time (in minutes)</label>
               <input type="text" id="userWeight" class="form-control">
-            </div>
+              </div>
           </div>
         </div>
       </div>
@@ -73,9 +79,20 @@
           </div>
         </div>
       </div>
+      <div class="panel panel-default">
+        <div id="result"></div>
+        <button id="submit" onClick="bmi()" class="btn btn-lg btn-primary">Submit</button>
+
+
+      </div>
     </div>
+
+
   </div>
-  </div>
+  <!-- </div> -->
+
+<!-- </div> -->
+
 
   <div class="overweight">
     <button id="Overweight_toggle" data-toggle="collapse" data-target="#demo5">Challenge a friend</button>
@@ -99,6 +116,8 @@
       <input type="text" id="userWeight" class="form-control">
     </div>
   </form>
+
+<!-- </div> -->
 
 
   <h2><b>Recent Achievements:</b></h2>

@@ -21,6 +21,10 @@ app.get('/challenges',function(req, res){
     res.render('challenges');
 });
 
+app.get('/challenges', function (req, res) {
+ res.render('challenges');
+});
+
 app.get('/', function (req, res) {
  res.render('index');
 });
